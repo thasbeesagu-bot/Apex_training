@@ -1,0 +1,47 @@
+while True:
+    print("\n===== AREA CALCULATOR =====")
+    print("1. Area of Circle")
+    print("2. Area of Rectangle")
+    print("3. Area of Triangle")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        radius = float(input("Enter the radius: "))
+        area = int(3.14 * radius * radius)
+        print("Area of Circle =", area)
+
+    elif choice == 2:
+        length = float(input("Enter the length: "))
+        breadth = float(input("Enter the breadth: "))
+        area = int(length * breadth)
+        print("Area of Rectangle =", area)
+
+    elif choice == 3:
+        print("\nTriangle or Square")
+        print("1. Triangle")
+        print("2. Square")
+
+        sub_choice = int(input("Enter your choice: "))
+
+        if sub_choice == 1:
+            base = float(input("Enter the base: "))
+            height = float(input("Enter the height: "))
+            area = int(0.5 * base * height)
+            print("Area of Triangle =", area)
+
+        elif sub_choice == 2:
+            side = float(input("Enter the side: "))
+            area = int(side * side)
+            print("Area of Square =", area)
+
+        else:
+            print("Invalid Choice")
+
+    elif choice == 4:
+        print("Program Exited")
+        break
+
+    else:
+        print("Invalid Choice")
