@@ -1,0 +1,13 @@
+java = int(input("Enter Java mark: "))
+python = int(input("Enter Python mark: "))
+mysql = int(input("Enter MySQL mark: "))
+
+total = java + python + mysql
+average = total / 3
+percentage = (total / 300) * 100
+remaining = 300 - total
+
+print("Total Marks =", total)
+print("Average =", average)
+print("Percentage =", percentage, "%")
+print("Remaining Marks from 300 =", remaining)
